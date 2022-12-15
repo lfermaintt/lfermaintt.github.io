@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html style="margin: 0% auto;">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Achievements | Louis Fermaintt</title>
+    <link rel="stylesheet" href="styleachievements.css">
+</head>
+<body style="margin: 0% auto; height: 30px;">
+    <div id="top" style="padding: 10px 0 0 0;">
+        <h1 style="margin: 0% auto; text-align: center; font-size: 50px;">Achievements</h1>
+    </div>
+    <div id="middle">
+        <p style="font-size: 20px; font-family: 'Poppins', sans-serif; text-align: center;">
+            I am currently a junior at Tappan Zee High School.</br>
+            My hobbies include playing videogames, hanging out with my friends,</br>
+            playing tennis/volleyball, and programming.</br></br>
+            I began to love programming freshman year of high school.</br>
+            Although COVID-19 made it hard to focus on the subject,</br>
+            I tried my best and ended up continuing with computer science the year after.</br>
+            I went forward with AP Computer Science A and got a <b>5</b> on the AP!</br></br>
+            </br></br></br></br></br></br></br></br>
+            <div class="star-wrapper"><img class="star" style="width:auto; height:200px;" src="https://static.wikia.nocookie.net/c3b08815-c15d-49db-8b47-4d3890fd7c61/scale-to-width/755"></div></p>
+    </div>
+    <div id="footer" style="max-width: 1883; background: rgb(182, 182, 182);">
+    </br>
+        <p style="height: 50px; margin: 0% auto; text-align: center;">&copy; 2022-2023. Louis Fermaintt. All Rights Reserved.</p>
+    </div>
+    <script>
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                const image = entry.target.querySelector('.star');
+
+                if (entry.isIntersecting) {
+                    image.classList.add('star-animation');
+	             return;
+                }
+            square.classList.remove('star-animation');
+            });
+        });
+
+        observer.observe(document.querySelector('.star-wrapper'));
+    </script>
+</body>
+</html>

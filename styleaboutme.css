@@ -1,0 +1,37 @@
+#top {
+    background: rgb(224, 224, 224);
+} h1 {
+    
+    color: rgba(82, 104, 102, 0.795);
+    text-align: center;
+    padding: 0px 0 25px 0;
+    font-family: 'Cabin', sans-serif;
+}
+body {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */ 
+    }
+
+    body::-webkit-scrollbar {
+        display: none; /* for Chrome, Safari, and Opera */
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    .star{
+        border-radius: 10px;
+        display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+    }
+    @media (prefers-reduced-motion: no-preference) {
+        .star-animation {
+          animation: fadeIn 1.7s ease-in;
+        }
+      }
