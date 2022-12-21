@@ -35,7 +35,7 @@ body {
           animation: fadeIn 1.7s ease-in;
         }
       }
-      .content {
+      .content{
         position: relative;
         display: inline-block;
     }
