@@ -35,10 +35,7 @@ body {
           animation: fadeIn 1.7s ease-in;
         }
       }
-    .content {
-        position: relative;
-        display: inline-block;
-    }
+
     .content .img-top {
         display: none;
     }
