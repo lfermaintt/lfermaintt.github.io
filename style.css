@@ -38,8 +38,7 @@ h1 {
 #footer {
     text-align: center;
 }  #middle {
-    border-left: rgb(224, 224, 224);
-    border-right: rgb(224, 224, 224);
+    background-color: rgb(224, 224, 224);
     font-size: 20px;
 } #text {
     font-family: 'Poppins', sans-serif;
