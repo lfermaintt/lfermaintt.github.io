@@ -10,8 +10,8 @@
     <title>Louis Fermaintt | Website</title>
     <meta charset="UTF-8">
 </head>
-<body style=" margin: 0% auto; border-width: 3px; background-color: rgb(224, 224, 224);">
-    <div id="top" style='background: url(heading_background.jpg); height: 400px; background-size:cover;'>
+<body style=" margin: 0% auto; border-width: 3px; background-color: rgb(65, 65, 65);">
+    <div id="top" style='background-image: linear-gradient(to bottom, rgba(70, 60, 82, 0.87), rgb(0,0,0,0)), url(heading_background.jpg); height: 400px; background-size:cover;'>
         <ul>
             <li><a href="aboutme.html">About Me</a></li>
             <li><a href="achievements.html">Achievements</a></li>
@@ -22,10 +22,11 @@
             <li><a style="background: none;" href="https://www.linkedin.com/in/louis-fermaintt-ba3090236/"><img style="height: 35px; width: 35px;" src="linkedin.png"></a></li>
         </ul>
     </div>
-    <div id = "middle" style="text-align: center; border-width: 10px;">
+    <div id = "middle" style="margin-top:70px;text-align: center; border-width: 10px;">
+        <h2>Resourceful</h2>
     </div>
     </br></br></br></br></br></br></br></br>
-    <div id="footer" style="max-width: 1883; background: rgb(182, 182, 182);">
+    <div id="footer" style="max-width: 1883; background: rgb(100, 95, 95);">
     </br>
         <p style="height: 50px; margin: 0% auto;">&copy; 2022-2023. Louis Fermaintt. All Rights Reserved.</p>
     </div>
@@ -36,7 +37,7 @@
         var different_greetings = ["Zdravo","Shalom","Hallå","Xin chào","Salve","Hello","Hola","Bonjour","Konnichiwa","Nǐn hǎo","Ciao","Guten tag","Hallo","Aloha","Hallau","Haló","Ahoj","Helo","Olá","Namaste"];
         var text = document.getElementById("top");
         var greet = document.createElement("h1");
-        greet.innerHTML = "<h1 id='hello'; max-width: 1600px;'><b> " + different_greetings[getRandomInt(20)] + "," + "</b></h1><h1 id='rest' style='height: 5px;'>My name is</h1><h1 id='name' style='letter-spacing: 10px; margin-top: 100px;'>L O U I S F E R M A I N T T</h1></div>";
+        greet.innerHTML = "<h1 id='hello'; style='height:30px;'><b> " + different_greetings[getRandomInt(20)] + "," + "</b></h1><h1 id='rest' style='height: 10px;'>My name is</h1><h1 id='name' style='height:10px;letter-spacing: 10px; margin-top: 100px;'>L O U I S F E R M A I N T T</h1></div>";
         (text.firstElementChild).insertAdjacentElement("beforebegin",greet);
     </script>
 </body>
