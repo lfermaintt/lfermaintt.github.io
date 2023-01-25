@@ -12,26 +12,33 @@
 </head>
 <body style=" margin: 0% auto; border-width: 3px; background-color: rgb(65, 65, 65);">
     <div id="top" style='background-image: linear-gradient(to bottom, rgba(70, 60, 82, 0.87), rgb(0,0,0,0)), url(heading_background.jpg); position: relative; width: 100%; height:400px; background-size:cover;'>
-        <div class="navbar">
-        <div style="background-color: rgb(84, 84, 84); font-size: 10px;">l</div>
-        <ul>
-            <li><a href="aboutme.html">About Me</a></li>
-            <li><a href="achievements.html">Achievements</a></li>
-            <li><a href="goingforward.html">Going Forward</a></li>
-            <li><a href="projects.html">Projects</a></li>
-        </br>
-            <li><a style="background: none;" href="https://github.com/lfermaintt"><img style="margin-top: 15px; height: 35px; width: 35px;" src="github.png"></a></li>
-            <li><a style="background: none;" href="https://www.linkedin.com/in/louis-fermaintt-ba3090236/"><img style="height: 35px; width: 35px;" src="linkedin.png"></a></li>
-        </ul>
-        <div style="background-color: rgb(84, 84, 84); font-size: 10px;">l</div>
+        <div class="navbar" style="transition: all 0.3s ease-out;">
+            <div class="bar"> </div>
+            <ul>
+                <div class="catagories">
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="goingforward.html">Going Forward</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                </div>
+                <div class="media"style="display: inline;">
+                <li><a style="display: inline; background: none;" href="https://github.com/lfermaintt"><img style="margin-top: 15px; height: 35px; width: 35px;" src="github.png"></a></li>
+                <li><a style="display: inline; background: none;" href="https://www.linkedin.com/in/louis-fermaintt-ba3090236/"><img style="height: 35px; width: 35px;" src="linkedin.png"></a></li>
+                </div>
+            </ul>
+            <div class="bar2"> </div>
         </div>
     </div>
     <div id = "middle" style="margin-top:70px;text-align: center; border-width: 10px;">
-        <h2 id="descs"style="color:rgb(235, 235, 235); font-family: 'Cabin', sans-serif; margin-top: 150px; font-size: 45px;">Tenacity, Responsibility, and Practicality</h2>
+        <h2 id="descs"style="color:rgb(235, 235, 235); font-family: 'Cabin', sans-serif; margin-top: 150px;font-family: 'Arvo', serif; font-size: 60px;"></br>Tenacity  Responsibility  Practicality</h2>
+
+        <div class="aboutme">
+            <h3>About Me</h3>
+        </div>
     </div>
     </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
     <div id="footer" style="max-width: 1883; background: rgb(100, 95, 95);">
-    </br>
+        </br>
         <p style="height: 50px; margin: 0% auto;">&copy; 2022-2023. Louis Fermaintt. All Rights Reserved.</p>
     </div>
     <script>
@@ -45,14 +52,22 @@
         (text.firstElementChild).insertAdjacentElement("beforebegin",greet);
 
         document.addEventListener("scroll", function () {
-        const navbar = document.querySelector(".navbar");
-        const navbarHeight = 400;
-        const distanceFromTop = Math.abs(
-            document.body.getBoundingClientRect().top
-        );
-        if (distanceFromTop >= navbarHeight) navbar.classList.add("fixed-top");
-        else navbar.classList.remove("fixed-top");
-});
+            const navbar = document.querySelector(".navbar");
+            const bar = document.querySelector(".bar");
+            const bar2 = document.querySelector(".bar2");
+            const navbarHeight = 406;
+            const distanceFromTop = Math.abs(document.body.getBoundingClientRect().top);
+            if (distanceFromTop >= navbarHeight) {
+                navbar.classList.add("fixed-top");
+                bar.classList.add("invisible");
+                bar2.classList.add("invisible");
+            }
+            else {
+                navbar.classList.remove("fixed-top");
+                bar.classList.remove("invisible");
+                bar2.classList.remove("invisible");
+            }
+        });
     </script>
 </body>
 </html>
