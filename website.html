@@ -15,11 +15,11 @@
         <div class="navbar" style="transition: all 0.3s ease-out;">
             <div class="bar"> </div>
             <ul>
-                <div class="catagories">
-                <li><a href="aboutme.html">About Me</a></li>
-                <li><a href="achievements.html">Achievements</a></li>
-                <li><a href="goingforward.html">Going Forward</a></li>
-                <li><a href="projects.html">Projects</a></li>
+                <div class="catagories" >
+                <li><a id="am" onclick="catascroll('.am')">About Me</a></li>
+                <li><a id="cs" onclick="catascroll('.cs')">Computer Science</a></li>
+                <li><a id="oa" onclick="catascroll('.oa')">Other Achievements</a></li>
+                <li><a id="gf" onclick="catascroll('.gf')">Fun</a></li>
                 </div>
                 <div class="media"style="display: inline;">
                 <li><a style="display: inline; background: none;" href="https://github.com/lfermaintt"><img style="margin-top: 15px; height: 35px; width: 35px;" src="github.png"></a></li>
@@ -29,14 +29,109 @@
             <div class="bar2"> </div>
         </div>
     </div>
+</br>
     <div id = "middle" style="margin-top:70px;text-align: center; border-width: 10px;">
-        <h2 id="descs"style="color:rgb(235, 235, 235); font-family: 'Cabin', sans-serif; margin-top: 150px;font-family: 'Arvo', serif; font-size: 60px;"></br>Tenacity  Responsibility  Practicality</h2>
-
-        <div class="aboutme">
-            <h3>About Me</h3>
+        <h2 id="descs"style="color:rgb(235, 235, 235); font-family: 'Cabin', sans-serif; margin-top: 150px;font-family: 'Arvo', serif; font-size: 70px;"></br>Tenacity  Responsibility  Practicality</h2>
+        </br></br><div class="am"></div></br></br></br></br>
+        <div class="aboutme" style="display: inline-block;">
+            <div style="background-color: rgb(84, 84, 84); color:rgb(84, 84, 84); font-size: small;">l</div>
+            <h3 class="group-head" style="text-align: left; margin-left: 400px;margin-top:100px; font-family: 'Arvo', serif;">About Me</h3>
+            <img style="border-color:rgb(134, 134, 134); border-width: 9px; border-style: solid;border-radius: 60px;height: 500px; width: 370px; display: inline; float: right; margin-left: 100px; margin-right: 300px;" src="image0.jpeg"/>
+            <p style="color:azure; font-size: 25px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-top:100px;margin-right:100px; margin-left: 300px; text-align: left;"></br>
+            My name is Louis and I am currently a junior in Tappan Zee High School. I am sixteen years old and cannot wait for the future to come.
+            I started my programming journey freshman year of high school. After taking those classes, I continued with the STEM field because Math and Science
+            have always been my favorite subjects. Sophomore, and now junior year, I pursued computer science and my goal is to help make the world a better place
+            through hard work. While I am not indulging in computer science, I enjoy playing tennis, football, and going to the gym. Some other fun activities include chess,
+            videogames, and working part-time at Shoprite.</p>
+        </div>
+        <div class="cs">
+            <div style="margin-top:120px; background-color: rgb(84, 84, 84); color:rgb(84, 84, 84); font-size: small;">l</div>
+            
+                <h3 class="group-head" style="text-align: center; margin-top:100px; font-family: 'Arvo', serif;">Computer Science</h3>
+                <p style="color:azure; text-align: center; margin-bottom:50px; font-size: 25px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-right:200px;margin-left:200px;"></br>
+                    My time in computer science has been fantastic. There were and still are so many opportunities for me to hone my skills. 
+                    Robotics in particular has made a huge impact on my life. From sophomore year, I have dedicated much time into coding
+                    the serializer along with the vision software for our 2022 and 2023 robot. I had went to competitions in 2022 where
+                    I was taught by my peers how <em>FIRST</em> Robotics Competitions worked. Other than this, AP Computer Science A really let me 
+                    delve into my love for computer science. Branching from this, Computer Science Club and Honor Society were not a far reach for me.
+                    From CodeCon to Hackathons, I enjoy to spread my love for computer science and teach others who maybe do not know much about it.
+                </p>
+                <div style="margin-bottom:50px;">
+                        <div style="display: inline-block;">
+                            <img style="border-color:rgb(134, 134, 134); border-width: 9px; border-style: solid; width: 350px; height: 400px;"src="robotics.jpg"/>
+                            <figcaption>Robotics Team - 2022/2023</figcaption>
+                        </div>
+                        <div style="display: inline-block; margin-left: 200px;">
+                            <img style="border-color:rgb(134, 134, 134); border-width: 9px; border-style: solid; width: 350px; height: 400px;"src="apcsa.jpg"/>
+                            <figcaption>AP Computer Science A Class; 5 on the AP</figcaption>
+                        </div>
+                        <div style="display: inline-block; margin-left: 200px;">
+                            <img style="border-color:rgb(134, 134, 134); border-width: 9px; border-style: solid; width: 300px; height: 400px;"src="makerfaire.jpg"/>
+                            <figcaption>Makerfaire; displayed projects to adults and children</figcaption>
+                        </div>
+                </div>
+                <div style="margin-bottom:50px;">
+                        <div style="display: inline-block; margin-left: 10px;">
+                                <img style="border-color:rgb(134, 134, 134); border-width: 9px; border-style: solid; width: 500px; height: 400px;"src="cshs.jpg"/>
+                                <figcaption>Computer Science Honor Society Certificate</figcaption>
+                        </div>
+                        <div style="display: inline-block; margin-left: 100px;">
+                                <img style="border-color:rgb(134, 134, 134); border-width: 9px; border-style: solid; width: 500px; height: 400px;"src="codecon.jpeg"/>
+                                <figcaption>CodeCon; Hosted "Unlock the Box" computer science game</figcaption>
+                        </div>
+                        <div style="display: inline-block; margin-left: 100px;">
+                                <img style=" display: inline; border-color:rgb(134, 134, 134); border-width: 9px; border-style: solid; width: 500px; height: 400px;"src="capstonepyramid.jpg"/>
+                                <figcaption>Computer Science Capstone Honors Class</figcaption>
+                        </div>
+                </div>
+        </div>
+        <div class="oa">
+                <div style="margin-top:120px; background-color: rgb(84, 84, 84); color:rgb(84, 84, 84); font-size: small;">l</div>
+                <h3 class="group-head" style="text-align: center; margin-top:100px; font-family: 'Arvo', serif;">Other Achievements</h3>
+                <p style="color:azure; text-align: center; margin-bottom:50px; font-size: 25px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-right:200px;margin-left:200px;"></br>
+                    Not only computer science, but math along with spanish I also am really interested in. That is why I joined Math Honor Society (Called Mu Alpha Theta), 
+                    the Math Team, and Spanish Club. Also, I became one of the first people to try out a new advanced spanish class for juniors. Relating to computer science, my classmates and I are involved in a program called Project Invent that has the goal of solving a
+                    problem that is had around the world. Our specific goal is to create an facial recognition attendance system using a raspberry pi and tablet to make attendance
+                    easier and more efficient. Furthermore, I am a member of the principal's council, we attend meetings and give our feedback about what is going on in the school.
+                </p>
+                <div style="margin-bottom:40px;">
+                    <div style="display: inline-block;;">
+                            <img style="border-color:rgb(134, 134, 134); border-width: 9px; border-style: solid; width: 500px; height: 400px;"src="projectinvent.jpg"/>
+                            <figcaption>My Group and I working on Project Invent.</figcaption>
+                    </div>
+                    <div style="display: inline-block; margin-left: 80px;">
+                            <img style="border-color:rgb(134, 134, 134); border-width: 9px; border-style: solid; width: 500px; height: 400px;"src="RISE.png"/>
+                            <figcaption><a href="https://bpb-us-w2.wpmucdn.com/blogs.socsd.org/dist/c/31/files/2022/06/RISE-Spring-Showcase-2022.pdf">RISE</a></figcaption>
+                    </div>
+                    <div style="display: inline-block; margin-left: 80px;">
+                            <img style="border-color:rgb(134, 134, 134); border-width: 9px; border-style: solid; width: 500px; height: 400px;"src="2021spring.png"/>
+                            <figcaption><a href="https://bpb-us-w2.wpmucdn.com/blogs.socsd.org/dist/1/346/files/2015/03/Student-Showcase-Spring-2021.pdf">Spring Showcase</a></figcaption>
+                    </div>
+                </div>
+                    <div style="margin-bottom:50px;">
+                        <div style="display: inline-block;">
+                                <img style="border-color:rgb(134, 134, 134); border-width: 9px; border-style: solid; width: 500px; height: 400px;"src="advancedspanish.jpg"/>
+                                <figcaption><a href="https://www.socsd.org/2022/09/20/tzhs-offers-new-advanced-spanish-language-and-culture-course/">Advanced Spanish Class</a></figcaption>
+                        </div>
+                        <!----
+                        <div style="display: inline-block; margin-left: 100px;">
+                                <img style="border-color:rgb(134, 134, 134); border-width: 9px; border-style: solid; width: 500px; height: 400px;"src="codecon.jpeg"/>
+                                <figcaption>CodeCon; Hosted "Unlock the Box" computer science game</figcaption>
+                        </div>
+                        <div style="display: inline-block; margin-left: 100px;">
+                                <img style=" display: inline; border-color:rgb(134, 134, 134); border-width: 9px; border-style: solid; width: 500px; height: 400px;"src="capstonepyramid.jpg"/>
+                                <figcaption>Computer Science Capstone Honors Class</figcaption>
+                        --->
+                    </div>
+        </div>
+        <div class="gf">
+            <div style="margin-top:120px; background-color: rgb(84, 84, 84); color:rgb(84, 84, 84); font-size: small;">l</div>
+            <h3 class="group-head" style="text-align: center; margin-top:100px; font-family: 'Arvo', serif;">Fun</h3>
+                While computer science is exuberant, there are many other things I enjoy to do. Tennis and football are the main sports I enjoy.
+                I started to play tennis when I was 15, and I have improved much since then. I joined the tennis team sophomore year for the first time and made
+                junior varsity doubles one.
         </div>
     </div>
-    </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
     <div id="footer" style="max-width: 1883; background: rgb(100, 95, 95);">
         </br>
         <p style="height: 50px; margin: 0% auto;">&copy; 2022-2023. Louis Fermaintt. All Rights Reserved.</p>
@@ -68,6 +163,12 @@
                 bar2.classList.remove("invisible");
             }
         });
+
+        function catascroll(c) {
+            document.querySelector(c).scrollIntoView({ 
+            behavior: 'smooth' 
+        });
+        }
     </script>
 </body>
 </html>

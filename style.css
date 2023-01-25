@@ -14,7 +14,7 @@
   display: inline;
   padding: 0px 40px 0px 40px;
   text-align: center;
-} a:link,a:visited,a:active {
+} #am, #cs, #gf, #p, #oa {
     background: rgb(100, 95, 95);;
     color: rgb(238, 247, 255);
     text-decoration: none;
@@ -24,7 +24,7 @@
     border-radius: 4px;
     padding: 5px;
 }
-a:hover{
+#am:hover, #cs:hover, #gf:hover, #p:hover, #oa:hover {
     background: rgba(46, 46, 46, 0.2);
     cursor: pointer;
 }
@@ -89,7 +89,18 @@ h1 {
 .bar2.invisible {
     animation: letterSizing 1s ease-in-out forwards;
 }
+.group-head {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
+figcaption {
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+    color:aliceblue;
+}
 /*
 .header {
     display: inline;
@@ -170,7 +181,6 @@ h1 {
     }
     100% {
         font-size: 0px;
-        opacity: 0;
     }
 }
 @keyframes reverseLetterSizing {
@@ -179,6 +189,5 @@ h1 {
     }
     0% {
         font-size: 0px;
-        opacity: 0;
     }
 }
